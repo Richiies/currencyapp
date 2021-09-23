@@ -1,0 +1,16 @@
+
+footer{
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+    
+    height: 40px;
+    background-image: linear-gradient(to right, rgb(240, 168, 168),#f2bfae);
+
+    
+}
+
+.footerbottom{
+    margin: 0;
+
+}

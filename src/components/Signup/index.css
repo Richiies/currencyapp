@@ -1,0 +1,36 @@
+.Signup-container{
+    background-image: linear-gradient(to right,rgba(226, 62, 62, 0.788),#cc937c,#e8ad79);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    align-items: center;
+}
+
+.signup-card{
+    height: 300px;
+    width: 300px;
+    background-image:linear-gradient(to left, rgba(122, 154, 223, 0.322),#58a0db,#5168ed);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    box-shadow: 5px 10px 5px rgb(199, 53, 53);
+    
+
+
+
+}
+label{
+    margin: 0;
+}
+
+.signupform{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+}
