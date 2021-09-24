@@ -54,6 +54,7 @@ class LoginForm extends Component {
     const user = {username, password}
 
       userDetails.push(user)
+      userDetails.push(user)
 
     
     console.log(userDetails)
