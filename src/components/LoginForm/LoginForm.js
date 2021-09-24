@@ -23,6 +23,7 @@ class LoginForm extends Component {
     const {history} = this.props
       console.log(response)
     console.log(response.profileObj);
+    Cookies.set("jwt-token", "akdjhsjdhaa", {expires :30})
     
     history.replace('/')
 
@@ -40,8 +41,6 @@ class LoginForm extends Component {
     const {history} = this.props
     Cookies.set("jwt-token", "akdjhsjdh", {expires :30})
 
-    
-
     history.replace('/')
   }
 
@@ -56,7 +55,7 @@ class LoginForm extends Component {
     
     const user = userDetails.find(user=> user.username === username && user.password === password  )
     let userlogin = JSON.stringify(user)
-    if (username!=="" && password!=="") {
+    if (username!=="" && password!=="" && password.length >=5) {
       this.onSubmitSuccess()
       localStorage.setItem("user", userlogin )
     } else {
@@ -135,6 +134,7 @@ class LoginForm extends Component {
           <button type="submit" className="login-button">
             Login
           </button>
+          <button type="button" className = "login-button"><Link to ="/forgotpassword">Forgot Password</Link></button>
           <div className = "signup">
           <Link to = "/signup" ><button type="button" className="login-button Signupbtn" >Signup</button></Link>
             

@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import userDetails from '../../Userdetails'
 import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
+
 import "./index.css"
 
 export default function SignUp(props) {
@@ -26,7 +27,7 @@ export default function SignUp(props) {
     }
     return (
         <>
-        <Header/>
+        <div className ="heading"><h1>SignUp Form</h1> <h1><Link to ="/login">Login</Link></h1></div>
         <div className = "Signup-container">
             <img src = "https://images-platform.99static.com//tSjq0JzUe3EcmSSvfq_BTHrlFbQ=/175x162:1037x1024/fit-in/500x500/99designs-contests-attachments/111/111370/attachment_111370236" alt = "signup-iamge"/>
             <div className = "signup-card">
@@ -39,7 +40,7 @@ export default function SignUp(props) {
                         <label htmlFor = "password">Password</label>
                         <input id = "password" type = "password" value = {password} onChange = {e=>setPassword(e.target.value)} />
                     
-                    <button type="submit">
+                    <button type="submit" className ="signup-btn">
                         Signup</button>
                         {signuperror? <p>Please enter the username and password</p>: null}
 

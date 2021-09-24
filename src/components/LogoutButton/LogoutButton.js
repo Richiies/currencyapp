@@ -6,7 +6,7 @@ import './index.css'
 const LogoutButton = props => {
   const onClickLogout = () => {
     const {history} = props
-    Cookies.remove('jwt_token')
+    Cookies.remove('jwt-token')
     history.replace('/login')
   }
   return (

@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import CurrencyRow from '../CurrencyRow/CurrencyRow'
 import Footer from '../Footer/Footer'
 import Header from '../Header/Header'
 import exchangeRates from '../../exchangeRates'
 import "./index.css"
+import Cookies from 'js-cookie'
+import { Redirect } from 'react-router-dom'
 
 
 
@@ -11,13 +13,16 @@ import "./index.css"
 
 
 export default function Home(props) {
-    const [isLoggedIn, setisLoggedIn] = useState(false)
-    
-    
+
+    const jwtToken = Cookies.get('jwt-token')
+  if (jwtToken === undefined) {
+    return <Redirect to="/login" />
+  } else{
+      
 
     return (
         <div className="Home-container">
-            <Header isLoggedIn = {isLoggedIn} setisLoggedIn = {setisLoggedIn} />
+            <Header  />
             <div>
                 <CurrencyRow exchangeRates = {exchangeRates} />
             </div>
@@ -27,4 +32,5 @@ export default function Home(props) {
             </div>
         </div>
     )
+}
 }

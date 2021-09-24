@@ -1,0 +1,12 @@
+h1{
+    color: rgb(30, 29, 97);
+}
+
+.About-card {
+    background-image: radial-gradient(circle, rgba(211, 79, 79, 0.89),#cfc75f,#d9ab4e );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}

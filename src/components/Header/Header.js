@@ -20,7 +20,7 @@ import "./index.css"
                     
                     <ul >
                         <li><Link to ="/login">Logout</Link></li>
-                        <li><Link to ="/signup">About App</Link></li>
+                        <li><Link to ="/about">About App</Link></li>
                         <li><a href="#/">Contact Us</a></li>
                     </ul>
                     

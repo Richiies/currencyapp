@@ -8,6 +8,11 @@
     align-items: center;
 }
 
+.heading{
+    display: flex;
+    justify-content: space-around;
+}
+
 .signup-card{
     height: 300px;
     width: 300px;
@@ -24,7 +29,8 @@
 
 }
 label{
-    margin: 0;
+    margin-right: auto;
+    margin-left: 15px;
 }
 
 .signupform{
@@ -33,4 +39,12 @@ label{
     justify-content: flex-start;
     align-items: center;
 
+}
+.signup-btn{
+    height: 40px;
+    width: 180px;
+    outline: none;
+    cursor: pointer;
+    background-image: linear-gradient(to right,rgba(47, 119, 201, 0.822),#2ce8cc);
+    border-radius: 8px;
 }

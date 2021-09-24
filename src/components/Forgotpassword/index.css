@@ -1,0 +1,19 @@
+.forgot-container{
+    background-image: repeating-linear-gradient(to right, rgba(150, 189, 58, 0.603),#9dd6f2,#d487fa);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.f-card{
+    background-image: repeating-linear-gradient(to right, rgba(141, 58, 189, 0.603),#9dd6f2,#d487fa);
+    height: 300px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
