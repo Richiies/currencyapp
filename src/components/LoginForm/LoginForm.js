@@ -51,10 +51,13 @@ class LoginForm extends Component {
   submitForm = async event => {
     event.preventDefault()
     const {username, password} = this.state
+    const user = {username, password}
+
+      userDetails.push(user)
 
     
-    const user = userDetails.find(user=> user.username === username && user.password === password  )
-    let userlogin = JSON.stringify(user)
+    console.log(userDetails)
+    let userlogin = JSON.stringify(userDetails)
     if (username!=="" && password!=="" && password.length >=5) {
       this.onSubmitSuccess()
       localStorage.setItem("user", userlogin )
